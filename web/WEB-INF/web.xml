@@ -4,9 +4,25 @@
         <servlet-name>VisitCounter</servlet-name>
         <servlet-class>VisitCounter</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>FirstServlet</servlet-name>
+        <servlet-class>FirstServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SecondServlet</servlet-name>
+        <servlet-class>SecondServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>VisitCounter</servlet-name>
         <url-pattern>/VisitCounter</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FirstServlet</servlet-name>
+        <url-pattern>/FirstServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SecondServlet</servlet-name>
+        <url-pattern>/SecondServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

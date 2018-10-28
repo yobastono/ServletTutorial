@@ -18,8 +18,11 @@ import javax.servlet.http.HttpServletResponse;
 public class SecondServlet extends HttpServlet {
     
     public void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException{
-                PrintWriter out = res.getWriter();
-                out.print("In second servlet");
+                
+        String str = req.getParameter("t1");
+        System.out.println(str);
+        PrintWriter out = res.getWriter();
+        out.print("In second servlet");
 
     }
 }

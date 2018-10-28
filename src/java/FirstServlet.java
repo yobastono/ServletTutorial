@@ -21,7 +21,12 @@ public class FirstServlet extends HttpServlet {
     @Override
     public void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException{
         
-        RequestDispatcher rd = req.getRequestDispatcher("SecondServlet");
-        rd.forward(req, res);
+        
+        // Sending request to the second Servlet and client doesn't know -> see url bar
+        //RequestDispatcher rd = req.getRequestDispatcher("SecondServlet");
+        //rd.forward(req, res);
+        
+        // letting the client know that the request went to the second servlet
+        res.sendRedirect("SecondServlet");
     }
 }
